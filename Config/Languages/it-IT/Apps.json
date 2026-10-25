@@ -1,0 +1,558 @@
+﻿{
+  "Clipchamp.Clipchamp": {
+    "FriendlyName": "Microsoft Clipchamp",
+    "Description": "Editor video di Microsoft"
+  },
+  "Microsoft.3DBuilder": {
+    "FriendlyName": "3D Builder",
+    "Description": "Software di base per la modellazione 3D (non più supportato)"
+  },
+  "Microsoft.549981C3F5F10": {
+    "FriendlyName": "Cortana",
+    "Description": "Assistente vocale Microsoft Cortana (discontinuato)"
+  },
+  "Microsoft.BingFinance": {
+    "FriendlyName": "MSN Money",
+    "Description": "App di notizie finanziarie e monitoraggio dei mercati di Microsoft"
+  },
+  "Microsoft.BingFoodAndDrink": {
+    "FriendlyName": "MSN Food & Drink",
+    "Description": "Ricette e notizie sul cibo (discontinuato)"
+  },
+  "Microsoft.BingHealthAndFitness": {
+    "FriendlyName": "MSN Health & Fitness",
+    "Description": "Monitoraggio e notizie su salute e fitness (discontinuato)"
+  },
+  "Microsoft.BingNews": {
+    "FriendlyName": "Microsoft News: le ultime notizie in tempo reale",
+    "Description": "App di aggregazione di notizie. Riunisce le ultime notizie, feed di articoli personalizzati e notizie di attualità da tutto il mondo"
+  },
+  "Microsoft.BingSports": {
+    "FriendlyName": "MSN Sports",
+    "Description": "Notizie e risultati sportivi (discontinuato)"
+  },
+  "Microsoft.BingTranslator": {
+    "FriendlyName": "Microsoft Translator",
+    "Description": "App di traduzione di Microsoft per Windows (discontinuata)"
+  },
+  "Microsoft.BingTravel": {
+    "FriendlyName": "MSN Travel",
+    "Description": "Pianificazione di viaggi e notizie (discontinuato)"
+  },
+  "Microsoft.BingWeather": {
+    "FriendlyName": "MSN Meteo",
+    "Description": "App di previsioni meteo di Microsoft"
+  },
+  "XP9CXNGPPJ97XX": {
+    "FriendlyName": "Microsoft Copilot",
+    "Description": "Assistente IA integrato in Windows"
+  },
+  "Microsoft.Windows.AIHub": {
+    "FriendlyName": "Copilot+ AI Hub",
+    "Description": "App Copilot+ AI Hub (Windows 11 24H2+)"
+  },
+  "Microsoft.PCManager": {
+    "FriendlyName": "Microsoft PC Manager",
+    "Description": "Strumento Microsoft PC Manager per la pulizia e l'ottimizzazione del sistema (spesso preinstallato)"
+  },
+  "Microsoft.Getstarted": {
+    "FriendlyName": "Get Started",
+    "Description": "Suggerimenti e guida introduttiva per Windows (non può essere disinstallata in Windows 11)"
+  },
+  "Microsoft.Messaging": {
+    "FriendlyName": "Microsoft Messaggi",
+    "Description": "App di messaggistica, spesso integrata con Skype (in gran parte discontinuata)"
+  },
+  "Microsoft.Microsoft3DViewer": {
+    "FriendlyName": "3D Viewer",
+    "Description": "Visualizzatore di modelli 3D (non più supportato)"
+  },
+  "Microsoft.MicrosoftJournal": {
+    "FriendlyName": "Microsoft Journal",
+    "Description": "App per prendere appunti digitali ottimizzata per l'uso della penna"
+  },
+  "Microsoft.MicrosoftOfficeHub": {
+    "FriendlyName": "Microsoft 365 Copilot (Office Hub)",
+    "Description": "Hub per accedere alle app e ai documenti di Microsoft Office 365"
+  },
+  "Microsoft.MicrosoftPowerBIForWindows": {
+    "FriendlyName": "Power BI",
+    "Description": "Client del servizio di analisi aziendale (discontinuato)"
+  },
+  "Microsoft.MicrosoftSolitaireCollection": {
+    "FriendlyName": "Microsoft Solitaire Collection",
+    "Description": "Raccolta di giochi di solitario"
+  },
+  "Microsoft.MicrosoftStickyNotes": {
+    "FriendlyName": "Microsoft Sticky Notes",
+    "Description": "App per creare memo rapidi sul desktop e sincronizzarli tra dispositivi"
+  },
+  "Microsoft.MixedReality.Portal": {
+    "FriendlyName": "Mixed Reality Portal",
+    "Description": "Portale per i visori Windows Mixed Reality (deprecato)"
+  },
+  "Microsoft.NetworkSpeedTest": {
+    "FriendlyName": "Network Speed Test",
+    "Description": "Utilità per testare la velocità della connessione Internet"
+  },
+  "Microsoft.Office.OneNote": {
+    "FriendlyName": "OneNote per Windows 10 (versione precedente)",
+    "Description": "App per prendere appunti digitali (versione Universal Windows Platform; non più supportata)"
+  },
+  "Microsoft.Office.Sway": {
+    "FriendlyName": "Sway",
+    "Description": "App per presentazioni e narrazione"
+  },
+  "Microsoft.OneConnect": {
+    "FriendlyName": "One Connect",
+    "Description": "App per la gestione degli operatori mobili (sostituita da Mobile Plans)"
+  },
+  "Microsoft.Print3D": {
+    "FriendlyName": "Print 3D",
+    "Description": "Software per la preparazione alla stampa 3D"
+  },
+  "Microsoft.PowerAutomateDesktop": {
+    "FriendlyName": "Power Automate",
+    "Description": "Strumento di automazione desktop (RPA)"
+  },
+  "Microsoft.SkypeApp": {
+    "FriendlyName": "Skype (UWP)",
+    "Description": "App di comunicazione Skype, versione Universal Windows Platform (discontinuata)"
+  },
+  "Microsoft.Todos": {
+    "FriendlyName": "Microsoft To Do: Lists, Tasks & Reminders",
+    "Description": "App per elenchi di attività e gestione delle attività"
+  },
+  "Microsoft.Windows.DevHome": {
+    "FriendlyName": "Dev Home",
+    "Description": "Dashboard per sviluppatori e utilità per la configurazione degli strumenti (discontinuata)"
+  },
+  "Microsoft.WindowsAlarms": {
+    "FriendlyName": "Sveglie e orologio Windows",
+    "Description": "App per sveglie, timer, cronometro e sessioni produttive"
+  },
+  "Microsoft.WindowsFeedbackHub": {
+    "FriendlyName": "Hub di Feedback",
+    "Description": "App per inviare feedback a Microsoft su Windows"
+  },
+  "Microsoft.WindowsMaps": {
+    "FriendlyName": "Mappe Windows",
+    "Description": "App per mappe e navigazione (non più supportata)"
+  },
+  "Microsoft.WindowsSoundRecorder": {
+    "FriendlyName": "Registratore vocale Windows",
+    "Description": "App di base per la registrazione audio"
+  },
+  "Microsoft.XboxApp": {
+    "FriendlyName": "Xbox Console Companion",
+    "Description": "Vecchia app Xbox Console Companion (discontinuata)"
+  },
+  "Microsoft.ZuneVideo": {
+    "FriendlyName": "Film e TV",
+    "Description": "App per riprodurre contenuti video acquistati (nuovi noleggi e acquisti non più disponibili)"
+  },
+  "MicrosoftCorporationII.MicrosoftFamily": {
+    "FriendlyName": "Microsoft Family Safety",
+    "Description": "App per gestire il tempo di utilizzo dello schermo, i filtri dei contenuti e i report sulle attività della famiglia"
+  },
+  "MicrosoftCorporationII.QuickAssist": {
+    "FriendlyName": "Assistenza rapida",
+    "Description": "Strumento per l'assistenza remota"
+  },
+  "MicrosoftTeams": {
+    "FriendlyName": "Microsoft Teams (Old)",
+    "Description": "Vecchia versione personale di Microsoft Teams (versione del Microsoft Store)"
+  },
+  "MSTeams": {
+    "FriendlyName": "Microsoft Teams (New)",
+    "Description": "Nuova app Microsoft Teams (Lavoro/Scuola o Personale)"
+  },
+  "ACGMediaPlayer": {
+    "FriendlyName": "ACG Player",
+    "Description": "App per la riproduzione multimediale"
+  },
+  "ActiproSoftwareLLC": {
+    "FriendlyName": "Actipro Software",
+    "Description": "App di Actipro Software, incluso Code Writer, un editor di testo e codice"
+  },
+  "AdobeSystemsIncorporated.AdobePhotoshopExpress": {
+    "FriendlyName": "Adobe Express Photos (ex Photoshop Express)",
+    "Description": "App di base per la modifica delle foto di Adobe"
+  },
+  "Amazon.com.Amazon": {
+    "FriendlyName": "Amazon",
+    "Description": "App per gli acquisti su Amazon"
+  },
+  "AmazonVideo.PrimeVideo": {
+    "FriendlyName": "Prime Video per Windows",
+    "Description": "App del servizio di streaming Amazon Prime Video"
+  },
+  "Asphalt8Airborne": {
+    "FriendlyName": "Asphalt 8: Airborne",
+    "Description": "Gioco di corse"
+  },
+  "AutodeskSketchBook": {
+    "FriendlyName": "Autodesk SketchBook",
+    "Description": "App per disegno e schizzi digitali"
+  },
+  "CaesarsSlotsFreeCasino": {
+    "FriendlyName": "Caesars Slots",
+    "Description": "Gioco di slot machine da casinò"
+  },
+  "COOKINGFEVER": {
+    "FriendlyName": "Cooking Fever",
+    "Description": "Gioco di simulazione di ristorante"
+  },
+  "CyberLinkMediaSuiteEssentials": {
+    "FriendlyName": "CyberLink Media Suite",
+    "Description": "Suite software multimediale (spesso preinstallata dai produttori OEM)"
+  },
+  "DisneyMagicKingdoms": {
+    "FriendlyName": "Disney Magic Kingdoms",
+    "Description": "Gioco di costruzione di un parco a tema Disney"
+  },
+  "Disney.37853FC22B2CE": {
+    "FriendlyName": "Disney+",
+    "Description": "App del servizio di streaming Disney+"
+  },
+  "DrawboardPDF": {
+    "FriendlyName": "Drawboard PDF",
+    "Description": "App per visualizzare e annotare PDF, spesso ottimizzata per l'uso della penna"
+  },
+  "Duolingo-LearnLanguagesforFree": {
+    "FriendlyName": "Duolingo",
+    "Description": "App per l'apprendimento delle lingue"
+  },
+  "FACEBOOK.FACEBOOK": {
+    "FriendlyName": "Facebook",
+    "Description": "App di social network Facebook"
+  },
+  "FarmVille2CountryEscape": {
+    "FriendlyName": "FarmVille 2: Country Escape",
+    "Description": "Gioco di simulazione agricola"
+  },
+  "Flipboard": {
+    "FriendlyName": "Flipboard",
+    "Description": "Aggregatore di notizie e social network con formato simile a una rivista"
+  },
+  "HiddenCity": {
+    "FriendlyName": "Hidden City: Avventura a oggetti nascosti",
+    "Description": "Gioco d'avventura e rompicapo con oggetti nascosti"
+  },
+  "HULULLC.HULUPLUS": {
+    "FriendlyName": "Hulu",
+    "Description": "App del servizio di streaming Hulu"
+  },
+  "iHeartRadio": {
+    "FriendlyName": "iHeartRadio",
+    "Description": "App per lo streaming di radio Internet"
+  },
+  "Facebook.Instagram": {
+    "FriendlyName": "Instagram",
+    "Description": "App di social network Instagram"
+  },
+  "king.com.BubbleWitch3Saga": {
+    "FriendlyName": "Bubble Witch 3 Saga",
+    "Description": "Gioco di rompicapi di King"
+  },
+  "king.com.CandyCrushSaga": {
+    "FriendlyName": "Candy Crush Saga",
+    "Description": "Gioco di rompicapi di King"
+  },
+  "king.com.CandyCrushSodaSaga": {
+    "FriendlyName": "Candy Crush Soda Saga",
+    "Description": "Gioco di rompicapi di King"
+  },
+  "LinkedInforWindows": {
+    "FriendlyName": "LinkedIn",
+    "Description": "App di networking professionale LinkedIn"
+  },
+  "MarchofEmpires": {
+    "FriendlyName": "March of Empires",
+    "Description": "Gioco di strategia"
+  },
+  "4DF9E0F8.Netflix": {
+    "FriendlyName": "Netflix",
+    "Description": "App del servizio di streaming Netflix"
+  },
+  "NYTCrossword": {
+    "FriendlyName": "NYT Crossword",
+    "Description": "App di parole crociate del New York Times"
+  },
+  "OneCalendar": {
+    "FriendlyName": "One Calendar",
+    "Description": "App per aggregare i calendari"
+  },
+  "PandoraMediaInc": {
+    "FriendlyName": "Pandora",
+    "Description": "App per lo streaming musicale Pandora"
+  },
+  "PhototasticCollage": {
+    "FriendlyName": "Phototastic Collage",
+    "Description": "App per creare collage fotografici"
+  },
+  "PicsArt-PhotoStudio": {
+    "FriendlyName": "Picsart Photo Editor",
+    "Description": "App per la modifica delle foto e la creatività"
+  },
+  "PolarrPhotoEditorAcademicEdition": {
+    "FriendlyName": "Polarr Photo Editor",
+    "Description": "App per la modifica delle foto (Edizione accademica)"
+  },
+  "flaregamesGmbH.RoyalRevolt": {
+    "FriendlyName": "Royal Revolt!",
+    "Description": "Gioco di difesa della torre / strategia"
+  },
+  "Sidia.LiveWallpaper": {
+    "FriendlyName": "Live Wallpaper",
+    "Description": "App per sfondi animati"
+  },
+  "SlingTV": {
+    "FriendlyName": "Sling TV",
+    "Description": "App del servizio di streaming TV in diretta"
+  },
+  "SpotifyAB.SpotifyMusic": {
+    "FriendlyName": "Spotify: musica e podcast",
+    "Description": "App per lo streaming musicale Spotify"
+  },
+  "BytedancePte.Ltd.TikTok": {
+    "FriendlyName": "TikTok",
+    "Description": "App TikTok per video brevi"
+  },
+  "TuneInRadio": {
+    "FriendlyName": "TuneIn Radio",
+    "Description": "App per lo streaming di radio Internet"
+  },
+  "WinZipUniversal": {
+    "FriendlyName": "WinZip",
+    "Description": "Utilità per la compressione e l'estrazione di file (versione Universal Windows Platform)"
+  },
+  "Microsoft.BingSearch": {
+    "FriendlyName": "Microsoft Bing (Ricerca)",
+    "Description": "Questa app integra la ricerca web di Microsoft Bing nella ricerca di Windows"
+  },
+  "Microsoft.Edge": {
+    "FriendlyName": "Microsoft Edge",
+    "Description": "Browser predefinito di Windows, ATTENZIONE: la rimozione di questa app rimuove anche l'unico browser da Windows Sandbox e potrebbe influire su altre app"
+  },
+  "Microsoft.GamingApp": {
+    "FriendlyName": "XBOX",
+    "Description": "App Xbox per Windows, necessaria per installare alcuni giochi per PC"
+  },
+  "Microsoft.GetHelp": {
+    "FriendlyName": "Richiesta supporto",
+    "Description": "Necessaria per alcuni strumenti di risoluzione dei problemi di Windows 11 e per le interazioni con il supporto"
+  },
+  "Microsoft.M365Companions": {
+    "FriendlyName": "Microsoft 365 Companions",
+    "Description": "Mini-app Microsoft 365 (Business) per Calendario, File e Persone; queste app possono essere reinstallate se abilitate dall'amministratore di Microsoft 365"
+  },
+  "Microsoft.MSPaint": {
+    "FriendlyName": "Paint 3D",
+    "Description": "App di disegno 3D (non più supportata)"
+  },
+  "Microsoft.OneDrive": {
+    "FriendlyName": "OneDrive",
+    "Description": "Client di archiviazione cloud consumer OneDrive"
+  },
+  "Microsoft.OutlookForWindows": {
+    "FriendlyName": "Outlook per Windows",
+    "Description": "Nuovo client di posta Outlook per Windows"
+  },
+  "Microsoft.Paint": {
+    "FriendlyName": "Paint",
+    "Description": "Paint classico (app di pittura tradizionale 2D)"
+  },
+  "Microsoft.People": {
+    "FriendlyName": "Microsoft People",
+    "Description": "App necessaria per Posta e Calendario e inclusa nel pacchetto (discontinuata)"
+  },
+  "Microsoft.RemoteDesktop": {
+    "FriendlyName": "Remote Desktop",
+    "Description": "App client di Desktop remoto (versione Microsoft Store; non più supportata)"
+  },
+  "Microsoft.ScreenSketch": {
+    "FriendlyName": "Cattura e note",
+    "Description": "Permette di acquisire schermate, aggiungere annotazioni, salvarle e condividerle"
+  },
+  "Microsoft.StartExperiencesApp": {
+    "FriendlyName": "Start Experiences App (Widget)",
+    "Description": "Questa app fornisce il feed personale dei Widget di Windows"
+  },
+  "Microsoft.Whiteboard": {
+    "FriendlyName": "Microsoft Whiteboard",
+    "Description": "App di lavagna digitale collaborativa"
+  },
+  "Microsoft.Windows.Photos": {
+    "FriendlyName": "Microsoft Foto",
+    "Description": "App predefinita per visualizzare e modificare le foto di base"
+  },
+  "Microsoft.WindowsCalculator": {
+    "FriendlyName": "Calcolatrice Windows",
+    "Description": "App Calcolatrice"
+  },
+  "Microsoft.WindowsCamera": {
+    "FriendlyName": "Fotocamera Windows",
+    "Description": "App Fotocamera per utilizzare fotocamere integrate o collegate"
+  },
+  "Microsoft.windowscommunicationsapps": {
+    "FriendlyName": "Posta e Calendario",
+    "Description": "Suite di app Posta e Calendario (il supporto è terminato)"
+  },
+  "Microsoft.WindowsNotepad": {
+    "FriendlyName": "Windows Notepad",
+    "Description": "Editor di testo Blocco note"
+  },
+  "Microsoft.WindowsStore": {
+    "FriendlyName": "Microsoft Store",
+    "Description": "Microsoft Store, ATTENZIONE: questa app non può essere reinstallata facilmente se rimossa!"
+  },
+  "Microsoft.WindowsTerminal": {
+    "FriendlyName": "Windows Terminal",
+    "Description": "App terminale predefinita in Windows 11 (Prompt dei comandi, PowerShell, WSL), ATTENZIONE: non rimuoverla se hai avviato Win11Debloat da Windows Terminal, poiché lo script non riuscirebbe a completare l'esecuzione."
+  },
+  "Microsoft.Xbox.TCUI": {
+    "FriendlyName": "Xbox TCUI Framework",
+    "Description": "Framework dell'interfaccia utente, apparentemente necessario per Microsoft Store, Foto e alcuni giochi"
+  },
+  "Microsoft.XboxGameOverlay": {
+    "FriendlyName": "Xbox Game Overlay",
+    "Description": "Sovrapposizione di gioco che fa parte di Xbox Game Bar. Questa app è necessaria per alcuni giochi. ATTENZIONE: la disinstallazione può ridurre le prestazioni dei giochi su alcuni PC con processori moderni."
+  },
+  "Microsoft.XboxGamingOverlay": {
+    "FriendlyName": "Game Bar",
+    "Description": "Questa app offre una sovrapposizione di gioco e l'integrazione con i servizi Xbox. È necessaria per alcuni giochi. ATTENZIONE: la disinstallazione può ridurre le prestazioni dei giochi su alcuni PC con processori moderni."
+  },
+  "Microsoft.XboxIdentityProvider": {
+    "FriendlyName": "Xbox Identity Provider",
+    "Description": "Framework di accesso Xbox, necessario per alcuni giochi e servizi Xbox"
+  },
+  "Microsoft.XboxSpeechToTextOverlay": {
+    "FriendlyName": "Xbox Speech To Text",
+    "Description": "Funzionalità di accessibilità necessaria per alcuni giochi, ATTENZIONE: questa app non può essere reinstallata facilmente!"
+  },
+  "Microsoft.YourPhone": {
+    "FriendlyName": "Collegamento al telefono",
+    "Description": "Collegamento del telefono (connette telefoni Android/iOS al PC)"
+  },
+  "Microsoft.ZuneMusic": {
+    "FriendlyName": "Lettore multimediale Windows",
+    "Description": "Media Player moderno (ha sostituito Groove Music e riproduce audio/video locali)"
+  },
+  "MicrosoftWindows.CrossDevice": {
+    "FriendlyName": "Esperienze di host tra dispositivi",
+    "Description": "Integrazione del telefono in Esplora file, Fotocamera e altro (parte delle funzionalità di Collegamento al telefono)"
+  },
+  "MicrosoftWindows.Client.WebExperience": {
+    "FriendlyName": "Windows Web Experience Pack",
+    "Description": "Contribuisce a fornire e aggiornare determinate funzionalità, come i Widget, tramite Microsoft Store"
+  },
+  "Microsoft.WidgetsPlatformRuntime": {
+    "FriendlyName": "Widgets Platform Runtime",
+    "Description": "Runtime necessario per il funzionamento dei Widget di Windows"
+  },
+  "LGElectronics.LGMonitorApp": {
+    "FriendlyName": "LG Monitor App",
+    "Description": "Software OEM LG per controllare il monitor LG; Windows Update potrebbe reinstallare automaticamente questa app se è collegato un monitor LG"
+  },
+  "AD2F1837.HPAIExperienceCenter": {
+    "FriendlyName": "HP AI Experience Center",
+    "Description": "Software OEM HP con funzionalità e supporto avanzati tramite IA"
+  },
+  "AD2F1837.HPConnectedMusic": {
+    "FriendlyName": "HP Connected Music",
+    "Description": "Software OEM HP per la musica (potenzialmente discontinuato)"
+  },
+  "AD2F1837.HPConnectedPhotopoweredbySnapfish": {
+    "FriendlyName": "HP Connected Photo",
+    "Description": "Software OEM HP per le foto, integrato con Snapfish (potenzialmente discontinuato)"
+  },
+  "AD2F1837.HPDesktopSupportUtilities": {
+    "FriendlyName": "HP Desktop Support Utilities",
+    "Description": "Software OEM HP che fornisce strumenti di supporto per il desktop"
+  },
+  "AD2F1837.HPEasyClean": {
+    "FriendlyName": "HP Easy Clean",
+    "Description": "Disattiva temporaneamente i dispositivi di input per consentire la pulizia"
+  },
+  "AD2F1837.HPFileViewer": {
+    "FriendlyName": "HP File Viewer",
+    "Description": "Software OEM HP per la visualizzazione di tipi di file specifici"
+  },
+  "AD2F1837.HPJumpStarts": {
+    "FriendlyName": "HP JumpStarts",
+    "Description": "Software OEM HP per tutorial, individuazione di app o accesso rapido alle funzionalità HP"
+  },
+  "AD2F1837.HPPCHardwareDiagnosticsWindows": {
+    "FriendlyName": "HP PC Hardware Diagnostics Windows",
+    "Description": "Software OEM HP per la diagnostica hardware del PC"
+  },
+  "AD2F1837.HPPowerManager": {
+    "FriendlyName": "HP Power Manager",
+    "Description": "Software OEM HP per la gestione delle impostazioni di alimentazione e della batteria"
+  },
+  "AD2F1837.HPPrinterControl": {
+    "FriendlyName": "HP Smart",
+    "Description": "Software OEM HP per la gestione delle stampanti HP"
+  },
+  "AD2F1837.HPPrivacySettings": {
+    "FriendlyName": "HP Privacy Settings",
+    "Description": "Software OEM HP per la gestione delle impostazioni della privacy"
+  },
+  "AD2F1837.HPQuickDrop": {
+    "FriendlyName": "HP QuickDrop",
+    "Description": "Software OEM HP per il trasferimento rapido di file tra dispositivi (non più supportato)"
+  },
+  "AD2F1837.HPQuickTouch": {
+    "FriendlyName": "HP QuickTouch",
+    "Description": "Software OEM HP, probabilmente per scorciatoie o controlli specifici per il touchscreen"
+  },
+  "AD2F1837.HPRegistration": {
+    "FriendlyName": "HP Registration",
+    "Description": "Software OEM HP per la registrazione del prodotto"
+  },
+  "AD2F1837.HPSupportAssistant": {
+    "FriendlyName": "HP Support Assistant",
+    "Description": "Software OEM HP per supporto, aggiornamenti e risoluzione dei problemi"
+  },
+  "AD2F1837.HPSureShieldAI": {
+    "FriendlyName": "HP Sure Shield AI",
+    "Description": "Software di sicurezza OEM HP, probabilmente per la protezione dalle minacce basata sull'IA"
+  },
+  "AD2F1837.HPSystemInformation": {
+    "FriendlyName": "HP System Information",
+    "Description": "Software OEM HP per visualizzare le informazioni di sistema"
+  },
+  "AD2F1837.HPWelcome": {
+    "FriendlyName": "HP Welcome",
+    "Description": "Software OEM HP che fornisce un'esperienza di benvenuto o assistenza per la configurazione iniziale"
+  },
+  "AD2F1837.HPWorkWell": {
+    "FriendlyName": "HP WorkWell",
+    "Description": "Software OEM HP focalizzato sul benessere, potenzialmente con promemoria per le pause o suggerimenti ergonomici (non più supportato)"
+  },
+  "AD2F1837.myHP": {
+    "FriendlyName": "myHP",
+    "Description": "Hub centrale OEM HP per informazioni sul dispositivo, supporto e servizi"
+  },
+  "E046963F.LenovoCompanion": {
+    "FriendlyName": "Lenovo Vantage",
+    "Description": "Hub OEM Lenovo per impostazioni del dispositivo, aggiornamenti e supporto"
+  },
+  "LenovoCompanyLimited.LenovoVantageService": {
+    "FriendlyName": "Lenovo Vantage Service",
+    "Description": "Componente del servizio in background per Lenovo Vantage"
+  },
+  "DellInc.DellSupportAssistforPCs": {
+    "FriendlyName": "Dell SupportAssist",
+    "Description": "Strumento OEM Dell per supporto, diagnostica e aggiornamenti"
+  },
+  "DellInc.DellDigitalDelivery": {
+    "FriendlyName": "Dell Digital Delivery",
+    "Description": "Software OEM Dell per la distribuzione di software acquistato in precedenza (non più supportato)"
+  },
+  "DellInc.DellMobileConnect": {
+    "FriendlyName": "Dell Mobile Connect",
+    "Description": "App OEM Dell per collegare un telefono Android/iOS al PC (sostituita da Phone Link)"
+  }
+}

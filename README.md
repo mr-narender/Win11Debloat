@@ -1,349 +1,174 @@
 # Win11Debloat
 
-Win11Debloat is a simple, easy to use and lightweight PowerShell script that can remove pre-installed Windows bloatware apps, disable telemetry and declutter the experience by disabling or removing intrusive interface elements, ads and more. No need to painstakingly go through all the settings yourself or remove apps one by one. Win11Debloat makes the process quick and easy!
+[![GitHub Release](https://img.shields.io/github/v/release/Raphire/Win11Debloat?style=for-the-badge&label=Latest%20release)](https://github.com/Raphire/Win11Debloat/releases/latest)
+[![Join the Discussion](https://img.shields.io/badge/Join-the%20Discussion-2D9F2D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Raphire/Win11Debloat/discussions)
+[![Static Badge](https://img.shields.io/badge/Documentation-_?style=for-the-badge&logo=bookstack&color=grey)](https://github.com/Raphire/Win11Debloat/wiki/)
 
-The script also includes many features that system administrators will enjoy. Such as support for Windows Audit mode, the option to make changes to other Windows users and the ability to run the script without requiring user input during runtime.
+ Win11Debloat is a lightweight, easy to use PowerShell script that allows you to quickly declutter and customize your Windows experience, no installation required! You can use it to remove pre-installed apps, disable telemetry, remove intrusive interface elements and much more. No need to painstakingly go through all the settings yourself or remove apps one by one. Win11Debloat makes the process quick and easy!
 
-![Win11Debloat Menu](/Assets/menu.png)
+The script also includes many features that system administrators and power users will enjoy. Such as a powerful command-line interface, support for Windows Audit mode and the ability to make changes to other Windows users. You can also easily export & import your preferred settings, allowing you to quickly apply the same settings on all your systems. Please refer to our [wiki](https://github.com/Raphire/Win11Debloat/wiki) for more details.
+
+![Win11Debloat Menu](/Assets/Images/menu.png)
 
 #### Did this script help you? Please consider buying me a cup of coffee to support my work
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M5C6UPC)
 
-## Features
-
-> [!Tip]
-> All of the changes made by Win11Debloat can easily be reverted and almost all of the apps can be reinstalled through the Microsoft Store. A full guide on how to revert changes can be found [here](https://github.com/Raphire/Win11Debloat/discussions/114).
-
-#### App Removal
-
-- Remove a wide variety of bloatware apps.
-- Remove all pinned apps from start for the current user, or for all existing & new users. (Windows 11 only)
-
-#### Telemetry, Tracking & Suggested Content
-
-- Disable telemetry, diagnostic data, activity history, app-launch tracking & targeted ads.
-- Disable tips, tricks, suggestions and ads in start, settings, notifications, File Explorer, and on the lockscreen.
-- Disable the 'Windows Spotlight' desktop background option.
-
-#### Bing Web Search, Copilot & More
-
-- Disable & remove Bing web search & Cortana from Windows search.
-- Disable & remove Windows Copilot. (W11 only)
-- Disable Windows Recall snapshots. (W11 only)
-
-#### File Explorer
-
-- Change the default location that File Explorer opens to.
-- Show hidden files, folders and drives.
-- Show file extensions for known file types.
-- Hide the Home or Gallery section from the File Explorer navigation pane. (W11 only)
-- Hide the 3D objects, music or OneDrive folder from the File Explorer navigation pane. (W10 only)
-- Hide duplicate removable drive entries from the File Explorer navigation pane, so only the entry under 'This PC' remains.
-
-#### Taskbar & Start
-
-- Align taskbar icons to the left. (W11 only)
-- Hide or change the search icon/box on the taskbar. (W11 only)
-- Hide the taskview button from the taskbar. (W11 only)
-- Disable the widgets service & hide icon from the taskbar.
-- Hide the chat (meet now) icon from the taskbar.
-- Disable & hide the recommended section in the start menu. (W11 only)
-
-#### Context Menu
-
-- Restore the old Windows 10 style context menu. (W11 only)
-- Hide the 'Include in library', 'Give access to' and 'Share' options from the context menu. (W10 only)
-
-#### Other
-
-- Disable Xbox game/screen recording, this also stops gaming overlay popups.
-- Turn off Enhance Pointer Precision, also known as mouse acceleration.
-- Option to apply changes to a different user, instead of the currently logged in user.
-- Sysprep mode to apply changes to the Windows Default user profile. Afterwards, all new users will have the changes automatically applied to them.
-
-### Default Settings
-
-The script allows you to select exactly what changes you want to make, but it also provides a 1-click default mode. The default mode allows you to quickly and easily apply the changes that are recommended for most users. Expand the section below for more info.
-
-<details>
-  <summary>Click to expand</summary>
-  
-  #### Default mode applies the following changes:
-  - Remove the default selection of bloatware apps. (See below for full list)
-  - Disable telemetry, diagnostic data, activity history, app-launch tracking & targeted ads.
-  - Disable tips, tricks, suggestions and ads in start, settings, notifications, File Explorer, and on the lockscreen.
-  - Disable & remove Bing web search & Cortana from Windows search.
-  - Disable Windows Copilot. (Windows 11 only)
-  - Show file extensions for known file types.
-  - Hide the 3D objects folder under 'This pc' from File Explorer. (Windows 10 only)
-  - Disable the widget service & hide the icon from the taskbar.
-  - Hide the Chat (meet now) icon from the taskbar.
-
-  #### Apps that ARE removed as part of the default mode
-  
-  <details>
-    <summary>Click to expand</summary>
-    <blockquote>
-      
-      Microsoft bloat:
-      - Clipchamp.Clipchamp  
-      - Microsoft.3DBuilder  
-      - Microsoft.549981C3F5F10 (Cortana app)
-      - Microsoft.BingFinance  
-      - Microsoft.BingFoodAndDrink 
-      - Microsoft.BingHealthAndFitness
-      - Microsoft.BingNews  
-      - Microsoft.BingSearch* (Bing web search in Windows)
-      - Microsoft.BingSports  
-      - Microsoft.BingTranslator  
-      - Microsoft.BingTravel   
-      - Microsoft.BingWeather  
-      - Microsoft.Getstarted (Cannot be uninstalled in Windows 11)
-      - Microsoft.Messaging  
-      - Microsoft.Microsoft3DViewer  
-      - Microsoft.MicrosoftJournal
-      - Microsoft.MicrosoftOfficeHub  
-      - Microsoft.MicrosoftPowerBIForWindows  
-      - Microsoft.MicrosoftSolitaireCollection  
-      - Microsoft.MicrosoftStickyNotes  
-      - Microsoft.MixedReality.Portal  
-      - Microsoft.NetworkSpeedTest  
-      - Microsoft.News  
-      - Microsoft.Office.OneNote (Discontinued UWP version only, does not remove new MS365 versions)
-      - Microsoft.Office.Sway  
-      - Microsoft.OneConnect  
-      - Microsoft.Print3D  
-      - Microsoft.SkypeApp  
-      - Microsoft.Todos  
-      - Microsoft.WindowsAlarms  
-      - Microsoft.WindowsFeedbackHub  
-      - Microsoft.WindowsMaps  
-      - Microsoft.WindowsSoundRecorder  
-      - Microsoft.XboxApp (Old Xbox Console Companion App, no longer supported)
-      - Microsoft.ZuneVideo  
-      - MicrosoftCorporationII.MicrosoftFamily (Microsoft Family Safety)
-      - MicrosoftTeams (Old personal version of MS Teams from the MS Store)
-      - MSTeams (New MS Teams app)
-  
-      Third party bloat:
-      - ACGMediaPlayer  
-      - ActiproSoftwareLLC  
-      - AdobeSystemsIncorporated.AdobePhotoshopExpress  
-      - Amazon.com.Amazon  
-      - AmazonVideo.PrimeVideo
-      - Asphalt8Airborne   
-      - AutodeskSketchBook  
-      - CaesarsSlotsFreeCasino  
-      - COOKINGFEVER  
-      - CyberLinkMediaSuiteEssentials  
-      - DisneyMagicKingdoms  
-      - Disney 
-      - Dolby  
-      - DrawboardPDF  
-      - Duolingo-LearnLanguagesforFree  
-      - EclipseManager  
-      - Facebook  
-      - FarmVille2CountryEscape  
-      - fitbit  
-      - Flipboard  
-      - HiddenCity  
-      - HULULLC.HULUPLUS  
-      - iHeartRadio  
-      - Instagram
-      - king.com.BubbleWitch3Saga  
-      - king.com.CandyCrushSaga  
-      - king.com.CandyCrushSodaSaga  
-      - LinkedInforWindows  
-      - MarchofEmpires  
-      - Netflix  
-      - NYTCrossword  
-      - OneCalendar  
-      - PandoraMediaInc  
-      - PhototasticCollage  
-      - PicsArt-PhotoStudio  
-      - Plex  
-      - PolarrPhotoEditorAcademicEdition  
-      - Royal Revolt  
-      - Shazam  
-      - Sidia.LiveWallpaper  
-      - SlingTV  
-      - Speed Test  
-      - Spotify  
-      - TikTok
-      - TuneInRadio  
-      - Twitter  
-      - Viber  
-      - WinZipUniversal  
-      - Wunderlist  
-      - XING
-      
-      * App is removed when disabling Bing in Windows search.
-  </blockquote>
-  </details>
-  
-  #### Apps that are NOT removed as part of the default mode
-  
-  <details>
-    <summary>Click to expand</summary>
-    <blockquote>
-      
-      General apps that are not removed by default:
-      - Microsoft.Edge (Edge browser, only removeable in the EEA)
-      - Microsoft.GetHelp (Required for some Windows 11 Troubleshooters)
-      - Microsoft.MSPaint (Paint 3D)
-      - Microsoft.OutlookForWindows* (New mail app)
-      - Microsoft.OneDrive (OneDrive consumer)
-      - Microsoft.Paint (Classic Paint)
-      - Microsoft.People* (Required for & included with Mail & Calendar)
-      - Microsoft.ScreenSketch (Snipping Tool)
-      - Microsoft.Whiteboard (Only preinstalled on devices with touchscreen and/or pen support)
-      - Microsoft.Windows.Photos
-      - Microsoft.WindowsCalculator
-      - Microsoft.WindowsCamera
-      - Microsoft.WindowsNotepad
-      - Microsoft.windowscommunicationsapps* (Mail & Calendar)
-      - Microsoft.WindowsStore (Microsoft Store, NOTE: This app cannot be reinstalled!)
-      - Microsoft.WindowsTerminal (New default terminal app in Windows 11)
-      - Microsoft.YourPhone (Phone Link)
-      - Microsoft.Xbox.TCUI (UI framework, removing this may break MS store, photos and certain games)
-      - Microsoft.ZuneMusic (Modern Media Player)
-      - MicrosoftWindows.CrossDevice (Phone integration within File Explorer, Camera and more)
-  
-      Gaming related apps that are not removed by default:
-      - Microsoft.GamingApp* (Modern Xbox Gaming App, required for installing some games)
-      - Microsoft.XboxGameOverlay* (Game overlay, required for some games)
-      - Microsoft.XboxGamingOverlay* (Game overlay, required for some games)
-      - Microsoft.XboxIdentityProvider (Xbox sign-in framework, required for some games)
-      - Microsoft.XboxSpeechToTextOverlay (Might be required for some games, NOTE: This app cannot be reinstalled!)
-  
-      Developer related apps that are not removed by default:
-      - Microsoft.PowerAutomateDesktop*
-      - Microsoft.RemoteDesktop*
-      - Windows.DevHome*
-  
-      * Can be removed by running the script with the relevant parameter. (See parameters section below)
-  </blockquote>
-  </details>
-</details>
-
 ## Usage
 
 > [!Warning]
-> Great care went into making sure this script does not unintentionally break any OS functionality, but use at your own risk!
+> Great care went into making sure this script does not unintentionally break any OS functionality, but use at your own risk! If you run into any issues, please report them [here](https://github.com/Raphire/Win11Debloat/issues).
 
 ### Quick method
 
-Download & run the script automatically via PowerShell. All files related to the script are saved to `%temp%/Win11Debloat` if you wish to inspect them. The script automatically cleans up the files after execution.
+Download & run the script automatically via PowerShell.
 
-1. Open PowerShell, preferably as an administrator.
-2. Copy and paste the code below into PowerShell, press enter to run the script:
+1. Open PowerShell or Terminal.
+2. Copy and paste the command below into PowerShell:
 
 ```PowerShell
 & ([scriptblock]::Create((irm "https://debloat.raphi.re/")))
 ```
 
-3. Wait for the script to automatically download Win11Debloat.
-4. A new PowerShell window will open showing the Win11Debloat menu. Select either the default or custom mode to continue.
-5. Carefully read through and follow the on-screen instructions.
+3. Wait for the script to automatically download and launch Win11Debloat.
+4. Carefully read through and follow the on-screen instructions.
 
-This method supports [parameters](#parameters). To use parameters simply run the script as explained above, but add the parameters at the end with spaces in between. Example:
-
-```PowerShell
-& ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) -RunDefaults -Silent
-```
+This method supports command-line parameters to customize the behaviour of the script. Please click [here](https://github.com/Raphire/Win11Debloat/wiki/Command%E2%80%90line-Interface#parameters) for more information.
 
 ### Traditional method
 
-Manually download & run the script.
+<details>
+  <summary>Manually download & run the script.</summary><br/>
 
-1. [Download the latest version of the script](https://github.com/Raphire/Win11Debloat/archive/master.zip), and extract the .ZIP file to your desired location.
-2. Navigate to the Win11Debloat folder
-3. Double click the `Run.bat` file to start the script. NOTE: If the console window immediately closes and nothing happens, try the advanced method below.
-4. Accept the Windows UAC prompt to run the script as administrator, this is required for the script to function.
-5. A new PowerShell window will now open showing the Win11Debloat menu. Select either the default or custom mode to continue.
-6. Carefully read through and follow the on-screen instructions.
+  1. [Download the latest version of the script](https://github.com/Raphire/Win11Debloat/releases/latest), and extract the .ZIP file to your desired location.
+  2. Navigate to the Win11Debloat folder
+  3. Double click the `Run.bat` file to start the script. NOTE: If the console window immediately closes and nothing happens, try the advanced method below.
+  4. Accept the Windows UAC prompt to run the script as administrator, this is required for the script to function.
+  5. Carefully read through and follow the on-screen instructions.
+</details>
 
 ### Advanced method
 
-Manually download the script & run the script via PowerShell. Recommended for advanced users.
+<details>
+  <summary>Manually download the script & run the script via PowerShell. Recommended for advanced users.</summary><br/>
 
-1. [Download the latest version of the script](https://github.com/Raphire/Win11Debloat/archive/master.zip), and extract the .ZIP file to your desired location.
-2. Open PowerShell as an administrator.
-3. Temporarily enable PowerShell execution by entering the following command:
+  1. [Download the latest version of the script](https://github.com/Raphire/Win11Debloat/releases/latest), and extract the .ZIP file to your desired location.
+  2. Open PowerShell or Terminal as an administrator.
+  3. Temporarily enable PowerShell execution by entering the following command:
 
-```PowerShell
-Set-ExecutionPolicy Unrestricted -Scope Process
-```
+  ```PowerShell
+  Set-ExecutionPolicy Bypass -Scope Process -Force
+  ```
 
-4. In PowerShell, navigate to the directory where the files were extracted. Example: `cd c:\Win11Debloat`
-5. Now run the script by entering the following command:
+  4. In PowerShell, navigate to the directory where the files were extracted. Example: `cd c:\Win11Debloat`
+  5. Now run the script by entering the following command:
 
-```PowerShell
-.\Win11Debloat.ps1
-```
+  ```PowerShell
+  .\Win11Debloat.ps1
+  ```
 
-6. The Win11Debloat menu will now open. Select either the default or custom mode to continue.
-7. Carefully read through and follow the on-screen instructions.
+  6. Carefully read through and follow the on-screen instructions.
 
-This method supports [parameters](#parameters). To use parameters simply run the script as explained above, but add the parameters at the end with spaces in between. Example:
+  This method supports command-line parameters to customize the behaviour of the script. Please click [here](https://github.com/Raphire/Win11Debloat/wiki/Command%E2%80%90line-Interface#parameters) for more information.
+</details>
 
-```PowerShell
-.\Win11Debloat.ps1 -RemoveApps -DisableBing -Silent
-```
+## Features
 
-### Parameters
+Below is an overview of the key features and functionality offered by Win11Debloat. You can visit the [the wiki](https://github.com/Raphire/Win11Debloat/wiki) for more details.
 
-The quick and advanced usage methods support switch parameters. A table of all the supported parameters and what they do can be found below.
+> [!Tip]
+> All of the changes made by Win11Debloat can easily be reverted and almost all of the apps can be reinstalled through the Microsoft Store. You can visit [the wiki](https://github.com/Raphire/Win11Debloat/wiki/Reverting-Changes) for more information on reverting changes.
 
-| Parameter | Description |
-| :-------: | ----------- |
-| -Silent                             |    Suppresses all interactive prompts, so the script will run without requiring any user input. |
-| -Sysprep                            |    Run the script in Sysprep mode. All changes will be applied to the Windows default user profile and will only affect new user accounts. |
-| -User `<USERNAME>`                  |    Run the script for the specified user, instead of the currently logged in user. This user must have logged on atleast once, and cannot be logged in at the time the script is run. |
-| -RunDefaults                        |    Run the script with the default settings. |
-| -RunSavedSettings                   |    Run the script with the saved custom settings from last time. These settings are saved to and read from the `SavedSettings` file in the root folder of the script. |
-| -RemoveApps                         |    Remove the default selection of bloatware apps. |
-| -RemoveAppsCustom                   |    Remove all apps specified in the 'CustomAppsList' file. IMPORTANT: You can generate your custom list by running the script with the `-RunAppConfigurator` parameter. No apps will be removed if this file does not exist! |
-| -RunAppConfigurator                 |    Run the app configurator to generate a list of apps to remove, the list is saved to the 'CustomAppsList' file. Running the script with the `-RemoveAppsCustom` parameter will remove the selected apps. |
-| -RemoveCommApps                     |    Remove the Mail, Calendar, and People apps. |
-| -RemoveW11Outlook                   |    Remove the new Outlook for Windows app. |
-| -RemoveDevApps                      |    Remove developer-related apps such as Remote Desktop, DevHome and Power Automate. |
-| -RemoveGamingApps                   |    Remove the Xbox App and Xbox Gamebar. |
-| -ForceRemoveEdge                    |    Forcefully remove Microsoft Edge, this option leaves Core, WebView and Update components installed for compatibility. NOT RECOMMENDED! |
-| -DisableDVR                         |    Disable Xbox game/screen recording feature & stop gaming overlay popups. |
-| -ClearStart                         |    Remove all pinned apps from start for the current user (Windows 11 update 22H2 or later only) |
-| -ClearStartAllUsers                 |    Remove all pinned apps from start for all existing and new users. (Windows 11 update 22H2 or later only) |
-| -DisableTelemetry                   |    Disable telemetry, diagnostic data & targeted ads. |
-| -DisableSuggestions                 |    Disable tips, tricks, suggestions and ads in start, settings, notifications and File Explorer. |
-| -DisableDesktopSpotlight            |    Disable the 'Windows Spotlight' desktop background option. |
-| -DisableLockscreenTips              |    Disable tips & tricks on the lockscreen. |
-| -DisableBing                        |    Disable & remove Bing web search, Bing AI & Cortana in Windows search. |
-| -DisableCopilot                     |    Disable and remove Windows Copilot. (Windows 11 only) |
-| -DisableRecall                      |    Disable Windows Recall snapshots. (Windows 11 only) |
-| -RevertContextMenu                  |    Restore the old Windows 10 style context menu. (Windows 11 only) |
-| -DisableMouseAcceleration           |    Turn off Enhance Pointer Precision, also known as mouse acceleration. Requires reboot to apply. |
-| -ShowHiddenFolders                  |    Show hidden files, folders and drives. |
-| -ShowKnownFileExt                   |    Show file extensions for known file types. |
-| -HideDupliDrive                     |    Hide duplicate removable drive entries from the File Explorer navigation pane, so only the entry under 'This PC' remains. |
-| -TaskbarAlignLeft                   |    Align taskbar icons to the left. (Windows 11 only) |
-| -HideSearchTb                       |    Hide search icon from the taskbar. (Windows 11 only) |
-| -ShowSearchIconTb                   |    Show search icon on the taskbar. (Windows 11 only) |
-| -ShowSearchLabelTb                  |    Show search icon with label on the taskbar. (Windows 11 only) |
-| -ShowSearchBoxTb                    |    Show search box on the taskbar. (Windows 11 only) |
-| -HideTaskview                       |    Hide the taskview button from the taskbar. (Windows 11 only) |
-| -HideChat                           |    Hide the chat (meet now) icon from the taskbar. |
-| -DisableWidgets                     |    Disable the widget service & hide the widget (news and interests) icon from the taskbar. |
-| <pre>-DisableStartRecommended</pre> |    Disable & hide the recommended section in the start menu. This will also change the start menu layout to `More pins`. |
-| -HideHome                           |    Hide the home section from the File Explorer navigation pane and add a toggle in the File Explorer folder options. (Windows 11 only) |
-| -HideGallery                        |    Hide the gallery section from the File Explorer navigation pane and add a toggle in the File Explorer folder options. (Windows 11 only) |
-| -ExplorerToHome                     |    Changes the page that File Explorer opens to `Home`. |
-| -ExplorerToThisPC                   |    Changes the page that File Explorer opens to `This PC`. |
-| -ExplorerToDownloads                |    Changes the page that File Explorer opens to `Downloads`. |
-| -ExplorerToOneDrive                 |    Changes the page that File Explorer opens to `OneDrive`. |
-| -HideOnedrive                       |    Hide the OneDrive folder from the File Explorer navigation pane. (Windows 10 only) |
-| -Hide3dObjects                      |    Hide the 3D objects folder under 'This pc' in File Explorer. (Windows 10 only) |
-| -HideMusic                          |    Hide the music folder under 'This pc' in File Explorer. (Windows 10 only) |
-| -HideIncludeInLibrary               |    Hide the 'Include in library' option in the context menu. (Windows 10 only) |
-| -HideGiveAccessTo                   |    Hide the 'Give access to' option in the context menu. (Windows 10 only) |
-| -HideShare                          |    Hide the 'Share' option in the context menu. (Windows 10 only) |
+#### App Removal
+
+- Remove a wide variety of preinstalled apps. Click [here](https://github.com/Raphire/Win11Debloat/wiki/App-Removal) for more info.
+
+#### Privacy & Suggested Content
+
+- Disable telemetry, diagnostic data, activity history, app-launch tracking & targeted ads.
+- Disable tips, tricks, suggestions & ads across Windows, the lock screen and Microsoft Edge.
+- Disable Windows location services, app location access and Find My Device location tracking.
+- Hide Microsoft 365 ads on the Settings 'Home' page, or hide the 'Home' page entirely.
+
+#### AI Features
+
+- Disable & remove Microsoft Copilot, Windows Recall and Click to Do.
+- Prevent AI service (WSAIFabricSvc) from starting automatically.
+- Disable AI Features in Edge, Chrome, Paint and Notepad.
+
+#### System
+
+- Restore the old Windows 10 style context menu.
+- Turn off Enhance Pointer Precision (mouse acceleration).
+- Disable the Sticky Keys keyboard shortcut.
+- Disable Storage Sense automatic disk cleanup.
+- Disable fast start-up to ensure a full shutdown.
+- Disable BitLocker automatic device encryption.
+- Disable network connectivity during Modern Standby to reduce battery drain.
+
+#### Windows Update
+
+- Prevent Windows from getting updates as soon as they're available.
+- Prevent automatic restarts after updates while signed in.
+- Disable sharing of downloaded updates with other PCs, also known as Delivery Optimization.
+- Prevent Windows from auto-installing device companion apps, like LG Monitor App, Alienware Command Center and more.
+
+#### Appearance
+
+- Enable dark mode for system and apps.
+- Disable transparency, animations and visual effects.
+- Hide the 'Learn about this picture' shortcut for desktop spotlight, or disable the Windows spotlight background option entirely.
+
+#### Start Menu & Search
+
+- Customize the start menu by removing pinned apps, hiding recommendations, and customizing the 'All Apps' section.
+- Disable the Phone Link mobile devices integration in the start menu.
+- Disable Bing web search & Copilot integration and Microsoft Store app suggestions in Windows search.
+
+#### Taskbar
+
+- Change taskbar alignment.
+- Customize or hide taskbar buttons like the search bar, taskview and more.
+- Disable widgets on the taskbar & lock screen.
+- Enable the 'End Task' option in the taskbar right click menu to quickly force-close apps.
+- Enable the 'Last Active Click' behavior in the taskbar app area. This allows you to repeatedly click on an application's icon in the taskbar to switch focus between the open windows of that application.
+- Customize how app buttons are shown on the taskbar.
+
+#### File Explorer
+
+- Change the default location that File Explorer opens to.
+- Show file extensions for known file types.
+- Show hidden files, folders and drives.
+- Hide the Home, Gallery or OneDrive section from the File Explorer navigation pane.
+- Hide duplicate removable drive entries from the File Explorer navigation pane, so only the entry under 'This PC' remains.
+- Add all common folders (Desktop, Downloads, etc.) back to 'This PC' in File Explorer.
+- Change drive letter position or visibility in File Explorer.
+
+#### Multi-tasking
+
+- Disable window snapping.
+- Disable Snap Assist and Snap Layout suggestions when dragging or snapping windows.
+- Change whether tabs are shown when snapping windows or pressing Alt+Tab.
+
+#### Optional Windows Features
+
+- Enable Windows Sandbox, a lightweight desktop environment for safely running applications in isolation.
+- Enable Windows Subsystem for Linux which allows you to run a Linux environment directly on Windows.
+
+#### Other
+
+- Disable Xbox Game Bar integration & game/screen recording. This also disables `ms-gamingoverlay`/`ms-gamebar` popups if you uninstall the Xbox Game Bar.
+- Disable bloat in Brave browser (AI, Crypto, News, etc.)
+
+#### Advanced Features
+
+- Ability to [apply changes to a different user](https://github.com/Raphire/Win11Debloat/wiki/Advanced-Features#running-as-another-user), instead of the currently logged in user.
+- [Sysprep mode](https://github.com/Raphire/Win11Debloat/wiki/Advanced-Features#sysprep-mode) to apply changes to the Windows Default user profile. Which ensures, all new users will have the changes automatically applied to them.
+
+## Contributing
+
+We welcome contributions of all kinds! Please see our [Contributing Guidelines](https://github.com/Raphire/Win11Debloat/blob/master/.github/CONTRIBUTING.md) for detailed instructions on how to get started and best practices for contributing.
+
+## License
+
+Win11Debloat is licensed under the MIT license. See the LICENSE file for more information.
