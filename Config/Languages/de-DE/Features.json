@@ -35,8 +35,8 @@
       "ApplyUndoText": "Tipps, Tricks, Vorschläge und Werbung in ganz Windows werden aktiviert"
     },
     "DisableNotifications": {
-      "Label": "Windows-Benachrichtigungen deaktivieren (von Apps und anderen Sendern)",
-      "ToolTip": "Deaktiviert systemeigene Windows-Benachrichtigungen von Apps und anderen Sendern, einschließlich Benachrichtigungen von Apps wie Discord, WhatsApp, Teams und Slack.",
+      "Label": "Windows-System- und App-Benachrichtigungen deaktivieren",
+      "ToolTip": "Deaktiviert systemeigene Windows-Benachrichtigungen vom System und von Apps, einschließlich Benachrichtigungen von Apps wie Discord, WhatsApp, Teams und Slack.",
       "ApplyText": "Windows-Benachrichtigungen und Erinnerungen werden deaktiviert",
       "UndoLabel": "Windows-Benachrichtigungen und Erinnerungen aktivieren",
       "ApplyUndoText": "Windows-Benachrichtigungen und Erinnerungen werden aktiviert"
@@ -510,6 +510,13 @@
       "ApplyText": "Automatische Neustarts nach Updates bei aktiver Anmeldung werden verhindert",
       "UndoLabel": "Automatische Neustarts nach Updates bei aktiver Anmeldung zulassen",
       "ApplyUndoText": "Automatische Neustarts nach Updates bei aktiver Anmeldung werden zugelassen"
+    },
+    "DisableDriverUpdates": {
+      "Label": "Treiberupdates über Windows Update deaktivieren",
+      "ToolTip": "Verhindert, dass Windows Treiberupdates über reguläre Windows-Qualitätsupdates automatisch herunterlädt und installiert. Windows kann weiterhin automatisch Treiber für neue Geräte installieren. Treiber, die in Sicherheitsupdates, kritischen Updates oder Funktionsupdates enthalten sind, können weiterhin installiert werden.",
+      "ApplyText": "Treiberupdates über Windows Update werden deaktiviert",
+      "UndoLabel": "Treiberupdates über Windows Update aktivieren",
+      "ApplyUndoText": "Treiberupdates über Windows Update werden aktiviert"
     },
     "DisableDeliveryOptimization": {
       "Label": "Freigabe heruntergeladener Updates für andere PCs deaktivieren",

@@ -35,8 +35,8 @@
       "ApplyUndoText": "Tips, aanbevelingen en advertenties in Windows inschakelen"
     },
     "DisableNotifications": {
-      "Label": "Windows-meldingen uitschakelen",
-      "ToolTip": "Schakelt Windows-meldingen uit van apps zoals Discord, WhatsApp, Teams en Slack, en van andere afzenders.",
+      "Label": "Windows-systeem- en appmeldingen uitschakelen",
+      "ToolTip": "Schakelt de ingebouwde Windows-meldingen van het systeem en apps uit, waaronder meldingen van apps zoals Discord, WhatsApp, Teams en Slack.",
       "ApplyText": "Windows-meldingen en herinneringen uitschakelen",
       "UndoLabel": "Windows-meldingen en herinneringen inschakelen",
       "ApplyUndoText": "Windows-meldingen en herinneringen inschakelen"
@@ -510,6 +510,13 @@
       "ApplyText": "Automatische herstarts na updates voorkomen zolang een gebruiker is aangemeld",
       "UndoLabel": "Automatische herstarts na updates toestaan zolang een gebruiker is aangemeld",
       "ApplyUndoText": "Automatische herstarts na updates toestaan zolang een gebruiker is aangemeld"
+    },
+    "DisableDriverUpdates": {
+      "Label": "Stuurprogramma-updates via Windows Update uitschakelen",
+      "ToolTip": "Voorkomt dat Windows automatisch stuurprogramma-updates downloadt en installeert via reguliere Windows-kwaliteitsupdates. Windows kan nog steeds automatisch stuurprogramma's voor nieuwe apparaten installeren. Stuurprogramma's die zijn opgenomen in beveiligingsupdates, essentiële updates of functie-updates kunnen nog steeds worden geïnstalleerd.",
+      "ApplyText": "Stuurprogramma-updates via Windows Update uitschakelen",
+      "UndoLabel": "Stuurprogramma-updates via Windows Update inschakelen",
+      "ApplyUndoText": "Stuurprogramma-updates via Windows Update inschakelen"
     },
     "DisableDeliveryOptimization": {
       "Label": "Update downloads van andere pc's blokkeren",
