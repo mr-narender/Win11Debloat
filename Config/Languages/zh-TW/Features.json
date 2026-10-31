@@ -35,8 +35,8 @@
       "ApplyUndoText": "正在啟用 Windows 各處的提示、技巧、建議與廣告"
     },
     "DisableNotifications": {
-      "Label": "停用 Windows 通知 (來自應用程式與其他寄件者)",
-      "ToolTip": "停用來自應用程式和其他寄件者的原生 Windows 通知，包括 Discord、WhatsApp、Teams 和 Slack 等應用程式的通知。",
+      "Label": "停用 Windows 系統與應用程式通知",
+      "ToolTip": "停用 Windows 原生系統與應用程式通知，包括 Discord、WhatsApp、Teams 和 Slack 等應用程式的通知。",
       "ApplyText": "正在停用 Windows 通知與提醒",
       "UndoLabel": "啟用 Windows 通知與提醒",
       "ApplyUndoText": "正在啟用 Windows 通知與提醒"
@@ -510,6 +510,13 @@
       "ApplyText": "正在防止登入期間更新後自動重新啟動",
       "UndoLabel": "允許登入期間更新後自動重新啟動",
       "ApplyUndoText": "正在允許登入期間更新後自動重新啟動"
+    },
+    "DisableDriverUpdates": {
+      "Label": "停用透過 Windows Update 進行的驅動程式更新",
+      "ToolTip": "防止 Windows 透過一般 Windows 品質更新自動下載及安裝驅動程式更新。Windows 仍可自動為新裝置安裝驅動程式。安全性更新、重大更新或功能更新中包含的驅動程式仍可能被安裝。",
+      "ApplyText": "正在停用透過 Windows Update 進行的驅動程式更新",
+      "UndoLabel": "啟用透過 Windows Update 進行的驅動程式更新",
+      "ApplyUndoText": "正在啟用透過 Windows Update 進行的驅動程式更新"
     },
     "DisableDeliveryOptimization": {
       "Label": "停用與其他 PC 共用已下載的更新",
