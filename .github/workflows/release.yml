@@ -27,7 +27,7 @@ jobs:
       GH_REPO: ${{ github.repository }}
       RELEASE_TAG: ${{ inputs.tag }}
     steps:
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: master
           persist-credentials: false
@@ -54,7 +54,7 @@ jobs:
         shell: powershell
         run: |
           $global:LASTEXITCODE = 0
-          ./Scripts/Run-Tests.ps1 -Bootstrap
+          ./Tools/Run-Tests.ps1 -Bootstrap
           if ($LASTEXITCODE -ne 0) { throw 'Release tests failed.' }
 
       - name: Commit version and create release tag
@@ -90,7 +90,7 @@ jobs:
         shell: powershell
         run: |
           $source = @(Get-ChildItem release-source -Directory)[0].FullName
-          & (Join-Path $source 'Scripts/Build-Release.ps1') -SourcePath $source -Version $env:RELEASE_TAG -OutputDirectory release-assets
+          & (Join-Path $source 'Tools/Build-Release.ps1') -SourcePath $source -Version $env:RELEASE_TAG -OutputDirectory release-assets
 
       - name: Create draft release
         shell: powershell
