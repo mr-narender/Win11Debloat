@@ -29,7 +29,7 @@
     },
     "DisableSuggestions": {
       "Label": "Windows 全体のヒント、おすすめコンテンツを無効にする",
-      "ToolTip": "この設定は、Windows の煩わしい表示を多数削除します。これには通知、リマインダー、同期プロバイダーの広告などが含まれます。また、おすすめアプリの自動インストールも防止します。",
+      "ToolTip": "この設定は、Windows の煩わしい表示や割り込みを多数取り除きます。これには通知、リマインダー、広告などが含まれます。また、おすすめアプリの自動インストールも防止します。",
       "ApplyText": "Windows 全体のヒント、おすすめ、広告を無効にしています",
       "UndoLabel": "Windows 全体のヒント、おすすめコンテンツを有効にする",
       "ApplyUndoText": "Windows 全体のヒント、おすすめ、広告を有効にしています"
@@ -159,6 +159,13 @@
       "ApplyText": "スタート メニューの「すべてのアプリ」セクションを無効にしています",
       "UndoLabel": "スタート メニューの「すべてのアプリ」セクションを表示する",
       "ApplyUndoText": "スタート メニューの「すべてのアプリ」セクションを有効にしています"
+    },
+    "DisableStartWebView2": {
+      "Label": "WebView2 を無効にしてWindows 検索のメモリ使用量を最適化する",
+      "ToolTip": "Windows 検索で WebView2 を使用しないようにして、メモリ使用量を削減します。この設定はすべてのユーザーに適用されます。",
+      "ApplyText": "Windows 検索の WebView2 を無効にしています",
+      "UndoLabel": "Windows 検索の動作を既定に戻す",
+      "ApplyUndoText": "Windows 検索の動作を既定に戻しています"
     },
     "DisableStartPhoneLink": {
       "Label": "スタート メニューのスマートフォン連携を無効にする",

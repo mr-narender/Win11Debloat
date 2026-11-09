@@ -29,7 +29,7 @@
     },
     "DisableSuggestions": {
       "Label": "Tipps, Tricks und vorgeschlagene Inhalte in ganz Windows deaktivieren",
-      "ToolTip": "Diese Einstellung entfernt viele störende Ablenkungen aus Windows. Dazu gehören Benachrichtigungen, Erinnerungen und Werbung von Synchronisierungsanbietern. Außerdem wird die automatische Installation vorgeschlagener Apps verhindert.",
+      "ToolTip": "Diese Einstellung entfernt viele störende Ablenkungen aus Windows. Dazu gehören Benachrichtigungen, Erinnerungen, Werbung und andere Unterbrechungen. Außerdem wird die automatische Installation vorgeschlagener Apps verhindert.",
       "ApplyText": "Tipps, Tricks, Vorschläge und Werbung in ganz Windows werden deaktiviert",
       "UndoLabel": "Tipps, Tricks und vorgeschlagene Inhalte in ganz Windows aktivieren",
       "ApplyUndoText": "Tipps, Tricks, Vorschläge und Werbung in ganz Windows werden aktiviert"
@@ -159,6 +159,13 @@
       "ApplyText": "Bereich „Alle Apps“ im Startmenü wird deaktiviert",
       "UndoLabel": "Bereich „Alle Apps“ im Startmenü anzeigen",
       "ApplyUndoText": "Bereich „Alle Apps“ im Startmenü wird aktiviert"
+    },
+    "DisableStartWebView2": {
+      "Label": "Speicherverbrauch der Windows-Suche durch Deaktivieren von WebView2 optimieren",
+      "ToolTip": "Reduziert den Speicherverbrauch, indem die Verwendung von WebView2 in der Windows-Suche verhindert wird. Diese Einstellung gilt für alle Benutzer.",
+      "ApplyText": "WebView2 in der Windows-Suche wird deaktiviert",
+      "UndoLabel": "Standardverhalten der Windows-Suche wiederherstellen",
+      "ApplyUndoText": "Standardverhalten der Windows-Suche wird wiederhergestellt"
     },
     "DisableStartPhoneLink": {
       "Label": "Smartphone-Link-Integration im Startmenü deaktivieren",
