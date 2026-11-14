@@ -75,6 +75,12 @@ Describe 'Shipped language catalogs: <LanguageCode>' -ForEach $languageCases {
         }
     }
 
+    It 'includes every app name and description without relying on English fallback' {
+        foreach ($key in ($baselineValues.Keys | Where-Object { $_.StartsWith('Apps.') })) {
+            $translationValues.ContainsKey($key) | Should -BeTrue -Because "$LanguageCode/$key must be translated"
+        }
+    }
+
     It 'preserves UTF-8 UI and app names when loading the catalogs' {
         $lang.Chrome.SettingsTitle | Should -BeExactly $catalogs.Chrome.SettingsTitle
         $lang.Apps.'Microsoft.WindowsCalculator'.FriendlyName |
@@ -87,5 +93,41 @@ Describe 'Shipped language catalogs: <LanguageCode>' -ForEach $languageCases {
             $label | Should -Not -BeNullOrEmpty -Because "$LanguageCode/$($feature.FeatureId) needs a label"
             $label | Should -Not -Be $feature.FeatureId
         }
+    }
+}
+
+
+Describe 'Plural keys in catalogs for languages without a singular form' {
+    BeforeAll {
+        . (Join-Path $PSScriptRoot '..\Scripts\FileIO\Import-LanguageFile.ps1')
+        $script:LanguagesPath = Join-Path $PSScriptRoot '..\Config\Languages'
+
+        # A language needs no '_one' key when Get-PluralCategory cannot return 'one'
+        # for it. Probe with the counts that CLDR rules actually branch on.
+        function Get-LanguageNeedsSingular {
+            param([string]$LanguageCode)
+
+            foreach ($count in @(0, 1, 2, 5, 11, 21, 100, 1000000)) {
+                if ((Get-PluralCategory -LanguageCode $LanguageCode -Count $count) -eq 'one') {
+                    return $true
+                }
+            }
+
+            return $false
+        }
+    }
+
+    It 'has no unreachable "_one" keys in <LanguageCode>' -ForEach $languageCases {
+        if (Get-LanguageNeedsSingular -LanguageCode $LanguageCode) {
+            Set-ItResult -Skipped -Because "$LanguageCode has a singular category"
+            return
+        }
+
+        $chromePath = Join-Path $script:LanguagesPath "$LanguageCode/Chrome.json"
+        $chrome = Get-Content -LiteralPath $chromePath -Raw -Encoding UTF8 | ConvertFrom-Json -ErrorAction Stop
+        $deadKeys = @($chrome.PSObject.Properties.Name | Where-Object { $_ -like '*_one' })
+
+        $keyList = $deadKeys -join ', '
+        $deadKeys.Count | Should -Be 0 -Because "$LanguageCode never resolves the one category, so these keys are unreachable and only add translation burden: $keyList"
     }
 }

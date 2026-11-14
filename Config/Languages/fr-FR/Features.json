@@ -29,14 +29,14 @@
     },
     "DisableSuggestions": {
       "Label": "Désactiver les conseils, astuces et contenus suggérés dans Windows",
-      "ToolTip": "Ce paramètre supprime de nombreuses distractions gênantes dans Windows, notamment les notifications, les rappels et les publicités des fournisseurs de synchronisation. Il empêche également l'installation automatique des applications suggérées.",
+      "ToolTip": "Ce paramètre supprime de nombreuses distractions gênantes dans Windows, notamment les notifications, les rappels, les publicités et autres interruptions. Il empêche également l'installation automatique des applications suggérées.",
       "ApplyText": "Désactivation des conseils, astuces, suggestions et publicités dans Windows",
       "UndoLabel": "Activer les conseils, astuces et contenus suggérés dans Windows",
       "ApplyUndoText": "Activation des conseils, astuces, suggestions et publicités dans Windows"
     },
     "DisableNotifications": {
-      "Label": "Désactiver les notifications Windows (des applications et autres expéditeurs)",
-      "ToolTip": "Désactive les notifications Windows natives des applications et autres expéditeurs, notamment celles de Discord, WhatsApp, Teams et Slack.",
+      "Label": "Désactiver les notifications du système et des applications Windows",
+      "ToolTip": "Désactive les notifications Windows natives du système et des applications, notamment celles de Discord, WhatsApp, Teams et Slack.",
       "ApplyText": "Désactivation des notifications et rappels Windows",
       "UndoLabel": "Activer les notifications et rappels Windows",
       "ApplyUndoText": "Activation des notifications et rappels Windows"
@@ -159,6 +159,13 @@
       "ApplyText": "Désactivation de la section « Toutes les applications » du menu Démarrer",
       "UndoLabel": "Afficher la section « Toutes les applications » du menu Démarrer",
       "ApplyUndoText": "Activation de la section « Toutes les applications » du menu Démarrer"
+    },
+    "DisableStartWebView2": {
+      "Label": "Optimiser l’utilisation de la mémoire de la recherche Windows en désactivant WebView2",
+      "ToolTip": "Réduit l’utilisation de la mémoire en empêchant la recherche Windows d’utiliser WebView2. Ce paramètre s’applique à tous les utilisateurs.",
+      "ApplyText": "Désactivation de WebView2 dans la recherche Windows",
+      "UndoLabel": "Restaurer le fonctionnement par défaut de la recherche Windows",
+      "ApplyUndoText": "Restauration du fonctionnement par défaut de la recherche Windows"
     },
     "DisableStartPhoneLink": {
       "Label": "Désactiver l'intégration de Mobile connecté dans le menu Démarrer",
@@ -343,6 +350,13 @@
       "UndoLabel": "Activer le nettoyage automatique du disque (Assistant Stockage)",
       "ApplyUndoText": "Activation du nettoyage automatique du disque (Assistant Stockage)"
     },
+    "DisableStartupDelay": {
+      "Label": "Désactiver le lancement différé des applications au démarrage",
+      "ToolTip": "Supprime le délai de lancement des applications qui démarrent automatiquement avec Windows, pour leur permettre de démarrer plus tôt. Sur les appareils plus anciens ou moins puissants, Windows peut alors être moins réactif après la connexion.",
+      "ApplyText": "Désactivation du délai de lancement des applications au démarrage",
+      "UndoLabel": "Rétablir le délai de lancement par défaut des applications au démarrage",
+      "ApplyUndoText": "Rétablissement du délai de lancement par défaut des applications au démarrage"
+    },
     "DisableFastStartup": {
       "Label": "Désactiver le démarrage rapide",
       "ToolTip": "Le démarrage rapide permet à votre PC de démarrer plus vite après un arrêt en enregistrant une image système sur le disque. Le désactiver peut résoudre certains problèmes, mais les temps de démarrage peuvent être légèrement plus longs.",
@@ -510,6 +524,13 @@
       "ApplyText": "Blocage des redémarrages automatiques après les mises à jour lorsque vous êtes connecté",
       "UndoLabel": "Autoriser les redémarrages automatiques après les mises à jour lorsque vous êtes connecté",
       "ApplyUndoText": "Autorisation des redémarrages automatiques après les mises à jour lorsque vous êtes connecté"
+    },
+    "DisableDriverUpdates": {
+      "Label": "Désactiver les mises à jour de pilotes via Windows Update",
+      "ToolTip": "Empêche Windows de télécharger et d'installer automatiquement les mises à jour de pilotes via les mises à jour qualité habituelles de Windows. Windows peut toujours installer automatiquement les pilotes des nouveaux appareils. Les pilotes inclus dans les mises à jour de sécurité, critiques ou de fonctionnalités peuvent toujours être installés.",
+      "ApplyText": "Désactivation des mises à jour de pilotes via Windows Update",
+      "UndoLabel": "Activer les mises à jour de pilotes via Windows Update",
+      "ApplyUndoText": "Activation des mises à jour de pilotes via Windows Update"
     },
     "DisableDeliveryOptimization": {
       "Label": "Désactiver le partage des mises à jour téléchargées avec d'autres PC",

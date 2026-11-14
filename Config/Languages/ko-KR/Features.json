@@ -29,14 +29,14 @@
     },
     "DisableSuggestions": {
       "Label": "Windows 전반의 팁, 요령 및 추천 콘텐츠 사용 안 함",
-      "ToolTip": "이 설정은 Windows의 여러 가지 번거로운 방해 요소를 제거합니다. 알림, 미리 알림, 동기화 공급자 광고 등이 포함됩니다. 또한 추천 앱이 자동으로 설치되는 것을 방지합니다.",
+      "ToolTip": "이 설정은 Windows의 여러 가지 번거로운 방해 요소를 제거합니다. 알림, 미리 알림, 광고 및 기타 방해 요소가 포함됩니다. 또한 추천 앱이 자동으로 설치되는 것을 방지합니다.",
       "ApplyText": "Windows 전반의 팁, 요령, 추천 및 광고 사용 안 함 설정 중",
       "UndoLabel": "Windows 전반의 팁, 요령 및 추천 콘텐츠 사용",
       "ApplyUndoText": "Windows 전반의 팁, 요령, 추천 및 광고 사용 설정 중"
     },
     "DisableNotifications": {
-      "Label": "Windows 알림 사용 안 함(앱 및 다른 보낸 사람)",
-      "ToolTip": "앱 및 다른 보낸 사람의 기본 Windows 알림을 사용하지 않도록 설정합니다. Discord, WhatsApp, Teams, Slack 같은 앱의 알림도 포함됩니다.",
+      "Label": "Windows 시스템 및 앱 알림 사용 안 함",
+      "ToolTip": "Windows 기본 시스템 및 앱 알림을 사용하지 않도록 설정합니다. Discord, WhatsApp, Teams, Slack 같은 앱의 알림도 포함됩니다.",
       "ApplyText": "Windows 알림 및 미리 알림 사용 안 함 설정 중",
       "UndoLabel": "Windows 알림 및 미리 알림 사용",
       "ApplyUndoText": "Windows 알림 및 미리 알림 사용 설정 중"
@@ -159,6 +159,13 @@
       "ApplyText": "시작 메뉴의 '모든 앱' 섹션 사용 안 함 설정 중",
       "UndoLabel": "시작 메뉴에서 '모든 앱' 섹션 표시",
       "ApplyUndoText": "시작 메뉴의 '모든 앱' 섹션 사용 설정 중"
+    },
+    "DisableStartWebView2": {
+      "Label": "WebView2를 사용하지 않도록 하여 Windows 검색의 메모리 사용량 최적화",
+      "ToolTip": "Windows 검색에서 WebView2를 사용하지 않도록 하여 메모리 사용량을 줄입니다. 이 설정은 모든 사용자에게 적용됩니다.",
+      "ApplyText": "Windows 검색의 WebView2 사용 안 함 설정 중",
+      "UndoLabel": "Windows 검색의 기본 동작 복원",
+      "ApplyUndoText": "Windows 검색의 기본 동작 복원 중"
     },
     "DisableStartPhoneLink": {
       "Label": "시작 메뉴의 휴대폰과 연결 통합 사용 안 함",
@@ -343,6 +350,13 @@
       "UndoLabel": "저장 공간 센스 자동 디스크 정리 사용",
       "ApplyUndoText": "저장 공간 센스 자동 디스크 정리 사용 설정 중"
     },
+    "DisableStartupDelay": {
+      "Label": "시작 앱의 지연 실행 사용 안 함",
+      "ToolTip": "Windows와 함께 자동으로 실행되는 앱의 대기 시간을 없애 앱이 더 빨리 시작되도록 합니다. 오래되었거나 성능이 낮은 장치에서는 로그인 후 Windows의 응답성이 떨어질 수 있습니다.",
+      "ApplyText": "시작 앱 실행 지연 사용 안 함 설정 중",
+      "UndoLabel": "시작 앱 실행 지연을 기본값으로 복원",
+      "ApplyUndoText": "시작 앱 실행 지연을 기본값으로 복원 중"
+    },
     "DisableFastStartup": {
       "Label": "빠른 시작 사용 안 함",
       "ToolTip": "빠른 시작은 시스템 이미지를 디스크에 저장하여 종료 후 PC가 더 빠르게 시작되도록 돕습니다. 빠른 시작을 사용하지 않도록 설정하면 특정 문제가 해결될 수 있지만 부팅 시간이 약간 길어질 수 있습니다.",
@@ -510,6 +524,13 @@
       "ApplyText": "로그인한 상태에서 업데이트 후 자동 다시 시작 방지 설정 중",
       "UndoLabel": "로그인한 상태에서 업데이트 후 자동 다시 시작 허용",
       "ApplyUndoText": "로그인한 상태에서 업데이트 후 자동 다시 시작 허용 설정 중"
+    },
+    "DisableDriverUpdates": {
+      "Label": "Windows 업데이트를 통한 드라이버 업데이트 비활성화",
+      "ToolTip": "Windows가 일반 Windows 품질 업데이트를 통해 드라이버 업데이트를 자동으로 다운로드하고 설치하지 못하도록 합니다. Windows는 새 장치의 드라이버를 계속 자동으로 설치할 수 있습니다. 보안 업데이트, 중요 업데이트 또는 기능 업데이트에 포함된 드라이버는 계속 설치될 수 있습니다.",
+      "ApplyText": "Windows 업데이트를 통한 드라이버 업데이트 비활성화 중",
+      "UndoLabel": "Windows 업데이트를 통한 드라이버 업데이트 활성화",
+      "ApplyUndoText": "Windows 업데이트를 통한 드라이버 업데이트 활성화 중"
     },
     "DisableDeliveryOptimization": {
       "Label": "다운로드한 업데이트를 다른 PC와 공유하지 않도록 설정",

@@ -29,14 +29,14 @@
     },
     "DisableSuggestions": {
       "Label": "Tipps, Tricks und vorgeschlagene Inhalte in ganz Windows deaktivieren",
-      "ToolTip": "Diese Einstellung entfernt viele störende Ablenkungen aus Windows. Dazu gehören Benachrichtigungen, Erinnerungen und Werbung von Synchronisierungsanbietern. Außerdem wird die automatische Installation vorgeschlagener Apps verhindert.",
+      "ToolTip": "Diese Einstellung entfernt viele störende Ablenkungen aus Windows. Dazu gehören Benachrichtigungen, Erinnerungen, Werbung und andere Unterbrechungen. Außerdem wird die automatische Installation vorgeschlagener Apps verhindert.",
       "ApplyText": "Tipps, Tricks, Vorschläge und Werbung in ganz Windows werden deaktiviert",
       "UndoLabel": "Tipps, Tricks und vorgeschlagene Inhalte in ganz Windows aktivieren",
       "ApplyUndoText": "Tipps, Tricks, Vorschläge und Werbung in ganz Windows werden aktiviert"
     },
     "DisableNotifications": {
-      "Label": "Windows-Benachrichtigungen deaktivieren (von Apps und anderen Sendern)",
-      "ToolTip": "Deaktiviert systemeigene Windows-Benachrichtigungen von Apps und anderen Sendern, einschließlich Benachrichtigungen von Apps wie Discord, WhatsApp, Teams und Slack.",
+      "Label": "Windows-System- und App-Benachrichtigungen deaktivieren",
+      "ToolTip": "Deaktiviert systemeigene Windows-Benachrichtigungen vom System und von Apps, einschließlich Benachrichtigungen von Apps wie Discord, WhatsApp, Teams und Slack.",
       "ApplyText": "Windows-Benachrichtigungen und Erinnerungen werden deaktiviert",
       "UndoLabel": "Windows-Benachrichtigungen und Erinnerungen aktivieren",
       "ApplyUndoText": "Windows-Benachrichtigungen und Erinnerungen werden aktiviert"
@@ -159,6 +159,13 @@
       "ApplyText": "Bereich „Alle Apps“ im Startmenü wird deaktiviert",
       "UndoLabel": "Bereich „Alle Apps“ im Startmenü anzeigen",
       "ApplyUndoText": "Bereich „Alle Apps“ im Startmenü wird aktiviert"
+    },
+    "DisableStartWebView2": {
+      "Label": "Speicherverbrauch der Windows-Suche durch Deaktivieren von WebView2 optimieren",
+      "ToolTip": "Reduziert den Speicherverbrauch, indem die Verwendung von WebView2 in der Windows-Suche verhindert wird. Diese Einstellung gilt für alle Benutzer.",
+      "ApplyText": "WebView2 in der Windows-Suche wird deaktiviert",
+      "UndoLabel": "Standardverhalten der Windows-Suche wiederherstellen",
+      "ApplyUndoText": "Standardverhalten der Windows-Suche wird wiederhergestellt"
     },
     "DisableStartPhoneLink": {
       "Label": "Smartphone-Link-Integration im Startmenü deaktivieren",
@@ -343,6 +350,13 @@
       "UndoLabel": "Automatische Speicheroptimierung aktivieren",
       "ApplyUndoText": "Automatische Speicheroptimierung wird aktiviert"
     },
+    "DisableStartupDelay": {
+      "Label": "Verzögerten Start von Autostart-Apps deaktivieren",
+      "ToolTip": "Deaktiviert die Wartezeit für Apps, die automatisch mit Windows starten, sodass sie früher starten können. Auf älteren oder weniger leistungsstarken Geräten kann Windows dadurch nach der Anmeldung langsamer reagieren.",
+      "ApplyText": "Verzögerung für Autostart-Apps wird deaktiviert",
+      "UndoLabel": "Standardverzögerung für Autostart-Apps wiederherstellen",
+      "ApplyUndoText": "Standardverzögerung für Autostart-Apps wird wiederhergestellt"
+    },
     "DisableFastStartup": {
       "Label": "Schnellstart deaktivieren",
       "ToolTip": "Der Schnellstart hilft Ihrem PC, nach dem Herunterfahren schneller zu starten, indem ein Systemabbild auf dem Datenträger gespeichert wird. Das Deaktivieren des Schnellstarts kann bei bestimmten Problemen helfen, kann jedoch zu etwas längeren Startzeiten führen.",
@@ -510,6 +524,13 @@
       "ApplyText": "Automatische Neustarts nach Updates bei aktiver Anmeldung werden verhindert",
       "UndoLabel": "Automatische Neustarts nach Updates bei aktiver Anmeldung zulassen",
       "ApplyUndoText": "Automatische Neustarts nach Updates bei aktiver Anmeldung werden zugelassen"
+    },
+    "DisableDriverUpdates": {
+      "Label": "Treiberupdates über Windows Update deaktivieren",
+      "ToolTip": "Verhindert, dass Windows Treiberupdates über reguläre Windows-Qualitätsupdates automatisch herunterlädt und installiert. Windows kann weiterhin automatisch Treiber für neue Geräte installieren. Treiber, die in Sicherheitsupdates, kritischen Updates oder Funktionsupdates enthalten sind, können weiterhin installiert werden.",
+      "ApplyText": "Treiberupdates über Windows Update werden deaktiviert",
+      "UndoLabel": "Treiberupdates über Windows Update aktivieren",
+      "ApplyUndoText": "Treiberupdates über Windows Update werden aktiviert"
     },
     "DisableDeliveryOptimization": {
       "Label": "Freigabe heruntergeladener Updates für andere PCs deaktivieren",
